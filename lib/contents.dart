@@ -12,7 +12,7 @@ class Contents extends StatelessWidget {
       child: Column(
         children: [
           Icon(iconData, size: 60.0),
-          SizedBox(height: 8.0),
+          const SizedBox(height: 12.0),
           Text(label)
         ],
       ),
@@ -30,36 +30,18 @@ class Contents extends StatelessWidget {
               iconData: Icons.local_taxi_outlined,
               label: '택시',
             ),
-            _buildColumnButton(
-              iconData: Icons.local_taxi,
-              label: '블랙',
-            ),
-            _buildColumnButton(
-              iconData: Icons.pedal_bike,
-              label: '바이크',
-            ),
-            _buildColumnButton(
-              iconData: Icons.drive_eta_outlined,
-              label: '대리',
-            )
+            _buildColumnButton(iconData: Icons.local_taxi, label: '블랙'),
+            _buildColumnButton(iconData: Icons.pedal_bike, label: '바이크'),
+            _buildColumnButton(iconData: Icons.drive_eta_outlined, label: '대리')
           ],
         ),
-        SizedBox(height: 32.0),
+        const SizedBox(height: 40.0),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            _buildColumnButton(
-              iconData: Icons.local_parking,
-              label: '주차',
-            ),
-            _buildColumnButton(
-              iconData: Icons.join_full,
-              label: '카풀',
-            ),
-            _buildColumnButton(
-              iconData: Icons.navigation,
-              label: '내비',
-            ),
+            _buildColumnButton(iconData: Icons.local_parking, label: '주차'),
+            _buildColumnButton(iconData: Icons.join_full, label: '카풀'),
+            _buildColumnButton(iconData: Icons.navigation, label: '내비'),
             _buildColumnButton(iconData: null, label: '')
           ],
         )

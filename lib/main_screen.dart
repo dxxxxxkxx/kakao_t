@@ -13,9 +13,9 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   final List<Widget> _screens = [
-    HomeScreen(),
-    MyServiceScreen(),
-    MyInfoScreen()
+    const HomeScreen(),
+    const MyServiceScreen(),
+    const MyInfoScreen()
   ];
   int _index = 0;
 
@@ -50,7 +50,7 @@ class _MainScreenState extends State<MainScreen> {
           ),
         ),
         body: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 40.0, horizontal: 32.0),
+          padding: const EdgeInsets.symmetric(vertical: 44.0, horizontal: 32.0),
           child: _screens[_index],
         ),
         bottomNavigationBar: BottomNavigationBar(
