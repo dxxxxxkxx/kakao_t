@@ -11,11 +11,13 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
+        const SizedBox(height: 44.0),
         const Contents(),
         const SizedBox(height: 48.0),
         Banners(),
         const SizedBox(height: 48.0),
-        Notices()
+        Notices(),
+        const SizedBox(height: 44.0)
       ],
     );
   }

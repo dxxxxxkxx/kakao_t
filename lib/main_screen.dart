@@ -50,7 +50,7 @@ class _MainScreenState extends State<MainScreen> {
           ),
         ),
         body: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 44.0, horizontal: 32.0),
+          padding: const EdgeInsets.symmetric(horizontal: 32.0),
           child: _screens[_index],
         ),
         bottomNavigationBar: BottomNavigationBar(
